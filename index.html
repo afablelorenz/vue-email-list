@@ -15,8 +15,8 @@
         <main>
             <section id="app">
                 <ul>
-                    <li v-for="email in randomEmail">
-                        {{randomEmail}}
+                    <li v-for="(email,i) in randomEmail" :key="i">
+                        {{ email }}
                     </li>
                 </ul>
             </section>
